@@ -11,7 +11,8 @@
             Console.WriteLine("2. Add node from Head/Front");
             Console.WriteLine("3. Add node from Tail/Last");
             Console.WriteLine("4. Insert node in between");
-            Console.WriteLine("5. Delete first node");
+            Console.WriteLine("5. Delete first element");
+            Console.WriteLine("6. Delete last  element");
             int input = int.Parse(Console.ReadLine());
             switch (input)
             {
@@ -49,6 +50,17 @@
                     linkedList.DeleteFirstNode();
                     linkedList.DisplayNodes();
                     break;
+
+                case 6:
+                    linkedList.AddNode(70);
+                    linkedList.AddNode(30);
+                    linkedList.AddNode(56);
+                    linkedList.DisplayNodes();
+
+                    linkedList.DeleteLastNode();
+                    linkedList.DisplayNodes();
+                    break;
+
 
                 default:
                     Console.WriteLine("Select a proper choice");

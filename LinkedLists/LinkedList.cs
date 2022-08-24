@@ -26,6 +26,7 @@ namespace LinkedLists
                 Head = node;
             }
             size++;
+            Console.WriteLine("Node is added");
         }
 
         public void AppendNode(int data)
@@ -43,6 +44,7 @@ namespace LinkedLists
                 Tail = node;
             }
             size++;
+            Console.WriteLine("Node is added");
         }
 
 
@@ -73,7 +75,7 @@ namespace LinkedLists
                 Tail = null;
 
             size--;
-            Console.WriteLine("Node with data {0} was deleted", value);
+            Console.WriteLine("Node with data {0} is deleted", value);
         }
 
         public void DeleteLastNode()
