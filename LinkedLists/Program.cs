@@ -14,6 +14,7 @@
             Console.WriteLine("5. Delete first element");
             Console.WriteLine("6. Delete last  element");
             Console.WriteLine("7. Search node in list");
+            Console.WriteLine("8. Insert node in between nodes");
             int input = int.Parse(Console.ReadLine());
             switch (input)
             {
@@ -68,11 +69,15 @@
                     linkedList.DisplayNodes();
 
                     linkedList.SearchNode(30);
-
                     break;
-
-
-
+                case 8:
+                    linkedList.AddNode(70);
+                    linkedList.AddNode(30);
+                    linkedList.AddNode(56);
+                    linkedList.DisplayNodes();
+                    linkedList.InsertNode(40,30);
+                    linkedList.DisplayNodes();
+                    break;
                 default:
                     Console.WriteLine("Select a proper choice");
                     break;
