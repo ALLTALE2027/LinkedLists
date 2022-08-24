@@ -118,6 +118,13 @@ namespace LinkedLists
             }
         }
 
+        public void OrderedList(params int[] array)
+        {   Array.Sort(array);                       // this sorts array in ascending order
+            for (int i = array.Length-1; i >=0; i--)
+            {
+                AddNode(array[i]);
+            }
+        }
         public void SearchNode(int data)
         {
             Node temp = Head;

@@ -16,6 +16,7 @@
             Console.WriteLine("7. Search node in list");
             Console.WriteLine("8. Insert node in between nodes");
             Console.WriteLine("9. Delete node in between nodes");
+            Console.WriteLine("10. Create Ordered linked list from unordered sequence of inputs");
             Console.WriteLine();
             int input = int.Parse(Console.ReadLine());
             switch (input)
@@ -87,6 +88,10 @@
                     linkedList.InsertNode(40, 30);
                     linkedList.DisplayNodes();
                     linkedList.DeleteIntermediateNode(40);
+                    linkedList.DisplayNodes();
+                    break;
+                case 10:
+                    linkedList.OrderedList(56,30,40,70);
                     linkedList.DisplayNodes();
                     break;
                 default:
