@@ -118,6 +118,30 @@ namespace LinkedLists
             }
         }
 
+        public void SearchNode(int data)
+        {
+            Node temp = Head;
+            bool search = false;
+            while (temp != null)
+            {
+                if (temp.data == data)
+                {
+                    search=true;
+                    Console.WriteLine("{0} Element is present in list ", data);
+                    break;
+                }
+
+                temp = temp.next;
+            }
+
+            if (!search)
+            {
+                Console.WriteLine("{0} Element is not present in list ", data);
+            }
+        }
+
+
+
         public void DisplayNodes()
         {
             Node temp = Head;
