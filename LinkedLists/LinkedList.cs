@@ -59,7 +59,7 @@ namespace LinkedLists
             node.next = temp.next;
             temp.next = node;
             size++;
-            Console.WriteLine($"Node inserted after {0}",afterNum);
+            Console.WriteLine("Node {0} inserted after {1}",data,afterNum);
 
         }
 
