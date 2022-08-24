@@ -15,6 +15,8 @@
             Console.WriteLine("6. Delete last  element");
             Console.WriteLine("7. Search node in list");
             Console.WriteLine("8. Insert node in between nodes");
+            Console.WriteLine("9. Delete node in between nodes");
+            Console.WriteLine();
             int input = int.Parse(Console.ReadLine());
             switch (input)
             {
@@ -76,6 +78,15 @@
                     linkedList.AddNode(56);
                     linkedList.DisplayNodes();
                     linkedList.InsertNode(40,30);
+                    linkedList.DisplayNodes();
+                    break;
+                case 9:
+                    linkedList.AddNode(70);
+                    linkedList.AddNode(30);
+                    linkedList.AddNode(56);
+                    linkedList.InsertNode(40, 30);
+                    linkedList.DisplayNodes();
+                    linkedList.DeleteIntermediateNode(40);
                     linkedList.DisplayNodes();
                     break;
                 default:
